@@ -1,0 +1,40 @@
+
+/*Må fikse at bildene hakker litt og at størrelsen ikke er ordentlig*/
+
+
+.Bildekarusell /* Navnet på classen */ {
+    animation-name: pictsk; /* Navnet på animasjonen*/
+    animation-duration: 20s; /* Hvor lenge skal den vare, før den gjentar seg selv */
+    animation-iteration-count: infinite; /* Hvor mange ganger skal den gjentas? - Her uendelig */
+    min-height: 600px; /* Minimumshøyde på classen */
+    min-width:900px; /*Minimumsbredde på classen*/
+    border-radius: 25px; /*Avrunnede hjørner */
+    margin-left: 1fr; /* Hvor langt fra kanten classen skal være*/
+    margin-right: 1fr; /* Hvor langt fra kanten classen skal være*/
+    border-style: dashed;
+    border-color: white;
+}
+
+    .Bildekarusell:hover /* Hva skal skej når en har musepekeren over animasjonen (classen) */ {
+
+     } 
+
+@keyframes pictsk /* nøkkelbilder/keyframes som skal brukes i animasjonen ved navn example */ {
+  
+
+    25% {
+        background-image: url(Bilder/4bilder/1-Alene-smol.png);
+    }
+
+    50% {
+        background-image: url(Bilder/4bilder/2-Tostykker-smol.png);
+    }
+
+    75% {
+        background-image: url(Bilder/4bilder/3-littfolk-smol.png);
+    }
+
+    100% {
+        background-image: url(Bilder/4bilder/4-AlleSammen-smol.png);
+    }
+}
