@@ -20,6 +20,7 @@
         color: #b8b8b8;
         background-color: #333333;
         padding-left: 1%;
+        padding-right: 1%;
         /*Grids i main*/
         display: grid;
         width: 99%;
@@ -54,6 +55,9 @@
     border-style: dashed;
     padding-left: 10px;
     margin: 0.1fr;
+    width: 180px;
+    height: 200px;
+
 }
 
 .imgpara {
@@ -89,6 +93,7 @@
         color: #b8b8b8;
         background-color: #333333;
         padding-left: 1%;
+        padding-right: 1%;
         /*Grids i main*/
         display: grid;
         width: 99%;
@@ -144,6 +149,7 @@
         color: #b8b8b8;
         background-color: #333333;
         padding-left: 1%;
+        padding-right: 1%;
         /*Grids i main*/
         width: 99%;
         height: 1fr;
@@ -178,3 +184,108 @@
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
 
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Layout for Teknologiforståelse*/
+
+/*Basic definisjoner for � sette opp grids i siden*/
+#teknopage {
+    display: grid;
+    width: 100%;
+    height: 1fr;
+    grid-template-areas: "head head head head" "head-m head-m head-m head-m" "ls tek_main tek_main rs" "ls foot foot rs";
+    grid-template-rows: 45px 60px 100% 25%;
+    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+}
+
+
+
+    /*Hoved omr�de*/
+    #teknopage > main {
+        grid-area: tek_main;
+        color: #b8b8b8;
+        background-color: #333333;
+        padding-left: 1%;
+        padding-right: 1%;
+        /*Grids i main*/
+        width: 99%;
+        height: 1fr;
+        min-width: 600px;
+        grid-template-areas: "tek_hm tek_hm tek_hm tek_hm" "bl bl bl bl" "tek_pm tek_pm tek_pm tek_pm" "tek_pm2 tek_pm2 tek_pm2 tek_pm2" ;
+        grid-template-rows: 8% 12% 140% 25%;
+        grid-row-gap: 0.1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+/*Innhold i main box*/
+/*Header i main*/
+.tek_headmain {
+    grid-area: tek_hm;
+
+}
+
+/*Paragraph i main*/
+.tek_paramain {
+    grid-area: tek_pm;
+ }
+.tek_paramain2 {
+    grid-area: tek_pm2;
+    position: center;
+ }
+
+.blank {
+    grid-area:bl;
+ }
+
+
+
+/*Containers til de forskjellige paragrafene*/
+/*Kode tatt fra kristian H*/
+.nested{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-auto-rows:minmax(100px, auto);
+    grid-gap:10px;
+    text-align: left;
+    font-size: 18px;
+    
+  }
+
+  .nested > div
+  {background-color: #333333;
+    padding:1em;
+    border-style: solid;
+    border-width:4px;
+    border-color: #C33E37 ;
+  }
+    .nested > div:nth-child(odd){
+      background-color:#333333;
+      border-style: solid;
+      border-color:  #C33E37;
+    }
+
+.container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-auto-rows:minmax(100px, auto);
+    grid-gap:10px;
+    text-align: left;
+    font-size: 18px;
+  
+  }
+  .container > div
+  {background-color: #333333;
+    padding:1em;
+    border-style: solid;
+    border-width:4px;
+    border-color: #C33E37;
+  }
+    .container > div:nth-child(odd){
+      background-color:#333333;
+      border-style: solid;
+      border-color: #C33E37;
+      }
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
