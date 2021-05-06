@@ -11,6 +11,8 @@
     <!--Linker extern css sheet-->
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
 
+    <meta http-equiv="refresh" content="30">
+
     <!--Website tab icon-->
     <link rel="icon" href="../mainbilder/minilogo.png">
     <title>Henrik Hub</title>
@@ -57,7 +59,7 @@
 
             <!--Her er innholdet på siden -->
             <h2 class="phpmain">Latest image by the raspberry pi</h2>
-            <img class="imgPHP" src="https://asvgit.com/tokyo/pi_img/temp.jpg">
+            <img class="imgPHP" id="Nisse" alt="Loading...">
 
             <div class="php_paramain">
 
@@ -68,7 +70,17 @@
              ?>
             </div>
 
+            <script>
+            function uuidv4()
+            {
+                return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                    let r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+                    return v.toString(16);
+                });
+            }
 
+            document.getElementById("Nisse").src = "https://asvgit.com/tokyo/pi_img/temp.jpg?" + uuidv4();
+        </script>
 
 
 

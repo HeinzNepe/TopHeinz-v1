@@ -18,7 +18,7 @@
 $sql = "SELECT K.StationID, K.Temperature, K.Pressure, K.Humidity, K.TimeKey
 FROM u580154432_tokyo.WeatherStation K
 ORDER BY K.StationID DESC, K.Temperature, K.Pressure, K.Humidity, K.TimeKey
-LIMIT 100";
+LIMIT 250";
 $resultat = $kobling->query($sql);
 echo "<table>"; // Starter tabellen
 echo "<tr>"; // Lager en rad med overskrifter
