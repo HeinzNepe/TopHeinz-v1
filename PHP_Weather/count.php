@@ -15,7 +15,7 @@
 
  //Angi UTF-8 som tegnsett
  $kobling->set_charset("utf8");
-$sql = "COUNT(*)";
+$sql = "SELECT COUNT(*) FROM WeatherStation";
 $resultat = $kobling->query($sql);
 
 echo "<h1>$resultat</h1>"
