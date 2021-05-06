@@ -65,7 +65,7 @@
 
              <!--Legger inn php (legg inn i databasen og nåværende innhold i databasen)-->
             <?php
-
+            
             include 'Oversikt.php'
              ?>
             </div>

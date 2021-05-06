@@ -19,6 +19,7 @@
 
 <h2>Raspberry pi readings</h2>
 <?php
+
  include 'SELECT_Oversikt1.php';
  ?>
  </div>
