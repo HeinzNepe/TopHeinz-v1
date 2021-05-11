@@ -466,7 +466,7 @@ body {
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
 
-/*Layout for PHP*/
+/*Layout for PHP pages*/
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -493,7 +493,7 @@ body {
         padding: var(--padding);
         /*Grids i main*/
         display: grid;
-        width: 99%;
+        width: 100%;
         height: 1fr;
         grid-template-areas: "hm hm hm hm" "php php php php" "imgphp imgphp imgphp imgphp" "php_pm php_pm php_pm php_pm";
         grid-template-rows: auto auto auto auto;
@@ -526,3 +526,66 @@ body {
         height: 216px;
     
     }
+
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Layout for PHP weather explanation*/
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Basic definisjoner for å sette opp grids i siden*/
+#phppageexp {
+    --padding: 10px;
+
+
+    display: grid;
+    width: 100%;
+    height: 1fr;
+    margin: 0%;
+    grid-template-areas: "head head head head" "head-m head-m head-m head-m" "ls main main rs" "ls foot foot rs";
+    grid-template-rows: 45px 60px auto 50px;
+    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+}
+
+
+
+    /*Hoved område*/
+    #phppageexp > main {
+        grid-area: main;
+        color: #b8b8b8;
+        background-color: #333333;
+        margin: 0%;
+        /*Grids i main*/
+        display: grid;
+        width: 100%;
+        height: 1fr;
+        grid-template-areas: "hm hm hm hm" 
+                            "php1 php1 php1 php1" 
+                            "php_pm1 php_pm1 php_pm1 php_pm1" 
+                            "php_pm1 php_pm1 php_pm1 php_pm1";
+        grid-template-rows: auto auto auto auto;
+        grid-row-gap: 0.1fr;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+    }
+
+    .phpmain1 {
+        grid-area: php1;
+        padding: var(--padding);
+    }
+
+    .php_paramain1 {
+        grid-area: php_pm1;
+        padding: var(--padding);
+    }
+    
+    .imgPHP1 {
+        grid-area: imgphp1;
+        text-align: center;
+        justify-self: inherit;
+        padding: var(--padding);
+        width: 384px;
+        
+    }
+
+    
