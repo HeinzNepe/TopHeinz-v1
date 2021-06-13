@@ -90,8 +90,43 @@ body {
         width: 560px;
     }
 
+/*==============================
+    Redirect i Index
+==============================*/
 
+    #redir > a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #redir > a:visited {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #redir > a:hover {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #redir > a:active {
+        color: white;
+        text-decoration: none;
+    }
 
+    .redirbtn {
+        background-color: #b90000;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .redirbtn :hover {
+        background-color: darkred;
+    }
 
 /*DROPDOWN MENY TING*/
 /*Selve knappen*/
