@@ -11,7 +11,7 @@
     <!--Linker extern css sheet-->
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
 
-    <meta http-equiv="refresh" content="30">
+    <meta https-equiv="refresh" content="30">
 
     <!--Website tab icon-->
     <link rel="icon" href="../mainbilder/minilogo.png">
